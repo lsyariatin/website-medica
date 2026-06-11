@@ -1040,92 +1040,101 @@
       </div>
 
     </section>
-    <section id="pricing" class="pricing section">
+    <section id="our-products" class="pricing section">
+
+      <style>
+        #our-products .product-card {
+          background: #fff;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          border: 2px solid transparent;
+        }
+        #our-products .product-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+          border-color: #3fbbc0;
+        }
+        #our-products .product-card .product-img {
+          width: 100%;
+          overflow: hidden;
+          background: #f8f9fa;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+        }
+        #our-products .product-card .product-img img {
+          max-width: 100%;
+          max-height: 450px;
+          object-fit: contain;
+        }
+        #our-products .product-card .product-body {
+          padding: 24px;
+          text-align: center;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+        #our-products .product-card .product-body h4 {
+          font-size: 18px;
+          font-weight: 700;
+          color: #333;
+          margin-bottom: 16px;
+        }
+        #our-products .product-card .btn-buy-wa {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          background: #25d366;
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          padding: 12px 28px;
+          border-radius: 50px;
+          text-decoration: none;
+          transition: background 0.3s ease;
+        }
+        #our-products .product-card .btn-buy-wa:hover {
+          background: #1da851;
+        }
+      </style>
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Our Products</h2>
+        <p>Koleksi buku terbaru dari Dopamine Medica untuk menunjang pengetahuan dan riset Anda</p>
       </div><!-- End Section Title -->
 
       <div class="container">
+        <div class="row justify-content-center">
 
-        <div class="row gy-3">
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+          <div class="col-lg-8 col-md-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-card">
+              <div class="product-img" style="gap: 20px; flex-direction: row; flex-wrap: wrap;">
+                <img src="assets/img/buku/Buku1.jpeg" alt="Buku 1" style="max-width: 45%; flex: 1 1 250px;">
+                <img src="assets/img/buku/Buku2.jpeg" alt="Buku 2" style="max-width: 45%; flex: 1 1 250px;">
+              </div>
+              <div class="product-body">
+                <div>
+                  <a href="https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku" target="_blank" rel="noopener" class="btn-buy-wa">
+                    <i class="bi bi-whatsapp"></i> Buy Now
+                  </a>
+                </div>
               </div>
             </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
+          </div><!-- End Product Item -->
 
         </div>
-
       </div>
 
-    </section><!-- /Pricing Section -->
+    </section><!-- /Our Products Section -->
     <!-- Sister Companies Section -->
     <section id="sister-companies" class="tabs section">
 
@@ -1644,6 +1653,231 @@
     </div>
 
   </footer>
+
+  <!-- Book Promo Overlay -->
+  <div id="bookOverlay" onclick="closeBookOverlay(event)">
+    <style>
+      #bookOverlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px;
+        opacity: 1;
+        transition: opacity 0.4s ease;
+      }
+      #bookOverlay.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #bookOverlay .book-close-btn {
+        position: fixed;
+        top: 18px;
+        right: 24px;
+        font-size: 36px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100000;
+        line-height: 1;
+        font-weight: 300;
+        transition: transform 0.2s;
+      }
+      #bookOverlay .book-close-btn:hover {
+        transform: scale(1.2);
+      }
+      #bookOverlay .book-card {
+        background: #fff;
+        border: 2px solid #3fbbc0;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 420px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      }
+      #bookOverlay .book-card img {
+        display: block;
+        max-height: 70vh;
+        width: auto;
+        max-width: 100%;
+        transition: opacity 0.6s ease;
+      }
+      #bookOverlay .book-card img.fade-out {
+        opacity: 0;
+      }
+      #bookOverlay .book-card .book-order-bar {
+        width: 100%;
+        padding: 12px 0;
+        text-align: center;
+        background: #3fbbc0;
+      }
+      #bookOverlay .book-card .book-order-bar a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      #bookOverlay .book-card .book-order-bar a:hover {
+        text-decoration: underline;
+      }
+
+      /* Mini popup */
+      #bookMiniPopup {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 99998;
+        background: #fff;
+        border: 2px solid #3fbbc0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+        animation: miniSlideIn 0.5s ease;
+      }
+      @keyframes miniSlideIn {
+        from { transform: translateY(40px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      #bookMiniPopup img {
+        display: block;
+        width: 200px;
+        height: auto;
+      }
+      #bookMiniPopup .mini-order-bar {
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        background: #3fbbc0;
+      }
+      #bookMiniPopup .mini-order-bar a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 13px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+      #bookMiniPopup .mini-order-bar a:hover {
+        text-decoration: underline;
+      }
+      #bookMiniPopup .mini-close {
+        position: absolute;
+        top: 4px;
+        right: 6px;
+        font-size: 18px;
+        color: #fff;
+        background: rgba(0,0,0,0.4);
+        border: none;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        line-height: 1;
+        padding: 0;
+      }
+    </style>
+
+    <span class="book-close-btn" onclick="closeBookOverlay(event)">&times;</span>
+
+    <div class="book-card" onclick="event.stopPropagation()">
+      <img id="overlayBookImg" src="assets/img/buku/Buku1.jpeg" alt="Buku">
+      <div class="book-order-bar">
+        <a id="overlayBookLink" href="https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku%201" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp"></i> Order via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book Mini Popup -->
+  <div id="bookMiniPopup">
+    <button class="mini-close" onclick="closeMiniPopup()">&times;</button>
+    <img id="miniPopupImg" src="assets/img/buku/Buku1.jpeg" alt="Buku Promo">
+    <div class="mini-order-bar">
+      <a id="miniPopupLink" href="https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i> Order
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Overlay slideshow
+    var overlayBooks = [
+      { src: 'assets/img/buku/Buku1.jpeg', link: 'https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku%201' },
+      { src: 'assets/img/buku/Buku2.jpeg', link: 'https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku%202' }
+    ];
+    var overlayIdx = 0;
+    var overlayInterval = setInterval(function() {
+      var img = document.getElementById('overlayBookImg');
+      var link = document.getElementById('overlayBookLink');
+      img.classList.add('fade-out');
+      setTimeout(function() {
+        overlayIdx = (overlayIdx + 1) % overlayBooks.length;
+        img.src = overlayBooks[overlayIdx].src;
+        link.href = overlayBooks[overlayIdx].link;
+        img.classList.remove('fade-out');
+      }, 600);
+    }, 4000);
+
+    // Book Overlay close
+    function closeBookOverlay(e) {
+      clearInterval(overlayInterval);
+      var overlay = document.getElementById('bookOverlay');
+      overlay.classList.add('hidden');
+      setTimeout(function() {
+        overlay.style.display = 'none';
+        showMiniPopup();
+      }, 400);
+    }
+
+    // Mini Popup
+    var miniImages = [
+      { src: 'assets/img/buku/Buku1.jpeg', link: 'https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku%201' },
+      { src: 'assets/img/buku/Buku2.jpeg', link: 'https://wa.me/628158827109?text=Halo%2C%20saya%20ingin%20order%20Buku%202' }
+    ];
+    var miniIdx = 0;
+    var miniInterval = null;
+
+    function showMiniPopup() {
+      var popup = document.getElementById('bookMiniPopup');
+      popup.style.display = 'flex';
+      miniIdx = 0;
+      updateMiniPopup();
+      miniInterval = setInterval(function() {
+        miniIdx = (miniIdx + 1) % miniImages.length;
+        updateMiniPopup();
+      }, 4000);
+    }
+
+    function updateMiniPopup() {
+      document.getElementById('miniPopupImg').src = miniImages[miniIdx].src;
+      document.getElementById('miniPopupLink').href = miniImages[miniIdx].link;
+    }
+
+    function closeMiniPopup() {
+      var popup = document.getElementById('bookMiniPopup');
+      popup.style.display = 'none';
+      if (miniInterval) clearInterval(miniInterval);
+    }
+  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
